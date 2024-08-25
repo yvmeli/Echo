@@ -1,4 +1,4 @@
-Python==3.12.4
+Python==3.12.0
 Flask==3.0.3
 werkzeug==3.0.3
 mutagen==1.47.0
