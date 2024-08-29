@@ -10,10 +10,73 @@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        {% block extra_head %}{% endblock %}
+        {% block extra_head %}
+        <style>
+            body {
+                background-color: #121212;
+                color: #e0e0e0;
+            }
+            .navbar {
+                background-color: #1f1f1f;
+            }
+            .navbar-brand, .nav-link {
+                color: #ffffff !important;
+            }
+            .navbar-toggler {
+                background-color: #333333;
+            }
+            .container {
+                background-color: #1f1f1f;
+                border-radius: 8px;
+                padding: 20px;
+            }
+            .btn-primary {
+                background-color: #6200ea;
+                border-color: #6200ea;
+            }
+            .btn-primary:hover {
+                background-color: #3700b3;
+                border-color: #3700b3;
+            }
+            .form-control, .custom-select {
+                background-color: #333333;
+                color: #e0e0e0;
+                border: 1px solid #444444;
+            }
+            .form-control:focus, .custom-select:focus {
+                border-color: #6200ea;
+                box-shadow: none;
+            }
+            .modal-content {
+                background-color: #1f1f1f;
+                color: #e0e0e0;
+                border-radius: 8px;
+            }
+            .music-item {
+                background-color: #1f1f1f;
+                border: 1px solid #333333;
+            }
+            .btn-link {
+                color: #bb86fc;
+            }
+            .btn-link:hover {
+                color: #3700b3;
+            }
+            .alert-success {
+                background-color: #2e7d32;
+                border-color: #2e7d32;
+                color: #ffffff;
+            }
+            .alert-danger {
+                background-color: #d32f2f;
+                border-color: #d32f2f;
+                color: #ffffff;
+            }
+        </style>
+        {% endblock %}
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="{{ url_for('index') }}">Echo!</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
